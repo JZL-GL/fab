@@ -3,9 +3,11 @@
 
 from invoke import task
 
+
 @task
 def hello(c):
-    print ("Hello World!")
+    c.run("hostname")
+    print("Hello World!")
 
 
 @task
